@@ -18,7 +18,7 @@ class SecondActivity : AppCompatActivity() {
         val goBackBtn = findViewById<Button>(R.id.goBackBtn)
         val txtArea = findViewById<EditText>(R.id.txtArea)
 
-        textViewMessage.text="Welcome to "+ receivedDestination
+        textViewMessage.text = "Welcome to " + receivedDestination
 
         goBackBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val receivedCity = intent.getStringExtra("cityName")
 
-        textView2.text="Last visit: "+ receivedCity
+        textView2.text = "Last visit: " + receivedCity
 
         navigateBtn.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
