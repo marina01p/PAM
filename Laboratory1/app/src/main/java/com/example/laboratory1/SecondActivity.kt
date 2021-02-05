@@ -10,10 +10,10 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
         val intent = intent
-        val receivedEmail = intent.getStringExtra("destinationName")
+        val receivedDestination = intent.getStringExtra("destinationName")
 
         val textViewMessage = findViewById<TextView>(R.id.textViewMessage)
 
-        textViewMessage.text="Welcome to "+ receivedEmail
+        textViewMessage.text="Welcome to "+ receivedDestination
     }
 }
