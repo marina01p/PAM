@@ -25,6 +25,7 @@ class SecondActivity : AppCompatActivity() {
         val franceImg = findViewById<ImageView>(R.id.franceImg)
         val spainImg = findViewById<ImageView>(R.id.spainImg)
         val goBtn = findViewById<Button>(R.id.goBtn)
+        txtArea.setText(receivedDestination + ", ")
 
         textViewMessage.text = "Welcome to $receivedDestination"
 
