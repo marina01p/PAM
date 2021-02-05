@@ -34,7 +34,7 @@ This is the laboratory work no. 1 for the Mobile Applications Programming course
 4. Lastly, I changed the icon of my app into a new customized one.
 
 ## Results
-![caption](https://github.com/marina01p/PAM/tree/lab1/Results)
+![alt text](https://github.com/marina01p/PAM/tree/lab1/Results)
 
 ## Status
 This project is finished.
