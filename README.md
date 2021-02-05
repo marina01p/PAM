@@ -6,11 +6,10 @@
 * [Introduction](#introduction)
 * [Tasks](#taasks)
 * [Implementation](#implementation)
-* [Results](#results)
 * [Status](#status)
 
 ## Introduction
-
+This is the laboratory work no. 1 for the Mobile Applications Programming course at the Technical University of Moldova.
    
 ## Tasks
 
@@ -33,8 +32,6 @@
 3. The data from MainActivity.kt is transmitted into a text area created in the second activity, and the user is able to performe some changes to it and then pass it to the main screen, where it will be displayed.
 4. Lastly, I changed the icon of my app into a new customized one.
 
-
-## Results
 
 ## Status
 This project is finished.
