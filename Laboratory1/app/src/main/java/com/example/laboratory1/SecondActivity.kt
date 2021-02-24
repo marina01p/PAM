@@ -16,8 +16,6 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val receivedDestination = intent.getStringExtra("destinationName")
-
         val goBackBtn = findViewById<Button>(R.id.goBackBtn)
 
 

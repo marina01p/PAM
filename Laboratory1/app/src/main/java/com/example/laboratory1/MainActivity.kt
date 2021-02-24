@@ -17,14 +17,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val navigateBtn = findViewById<Button>(R.id.navigateBtn)
-
-
-
+        val goToLists = findViewById<Button>(R.id.goToLists)
 
         navigateBtn.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
+        }
 
+        goToLists.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent)
         }
 
 
