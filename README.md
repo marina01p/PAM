@@ -22,6 +22,7 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 6. Create your UI and layout to support portrait and landscape orientations and different screen sizes starting from phone with small screens (4 inch) to tablets with screen size 12 inch. Supporting of different screen sizes and orientation is mandatory.
 
 ## Implementation
+![alt text](https://github.com/marina01p/PAM/blob/lab2/Results/empty.png)
 
 ## Status
 This project is not finished.
