@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         navigateBtn.setOnClickListener {
             if(usernameLogArea.text.trim().isNotEmpty() && passwordLogArea.text.trim().isNotEmpty()) {
                 val intent = Intent(this, ThirdActivity::class.java)
+                intent.putExtra("userNameLog", usernameLogArea.text.toString())
                 startActivity(intent)
 //                Toast.makeText(this,"Input provided",Toast.LENGTH_LONG).show()
             } else {

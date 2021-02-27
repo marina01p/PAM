@@ -27,6 +27,7 @@ class SecondActivity : AppCompatActivity() {
 
                 if (passwordRegArea.text.trim() == repeatPasswordRegArea.text.trim()) {
                     val intent = Intent(this, ThirdActivity::class.java)
+                    intent.putExtra("userNameReg", usernameRegArea.text.toString())
                     startActivity(intent)
                 } else {
                     Toast.makeText(this, "Passwords do not match", Toast.LENGTH_LONG).show()
@@ -37,7 +38,7 @@ class SecondActivity : AppCompatActivity() {
         }
 
         signGoTxt.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
