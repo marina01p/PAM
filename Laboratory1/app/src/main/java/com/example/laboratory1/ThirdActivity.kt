@@ -13,7 +13,7 @@ class ThirdActivity : AppCompatActivity() {
         val goToFirst = findViewById<Button>(R.id.goToFirst)
 
         goToFirst.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
         }
     }

@@ -13,7 +13,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val textView = findViewById<TextView>(R.id.textView)
+//        val textView = findViewById<TextView>(R.id.textView)
         val signGoTxt = findViewById<TextView>(R.id.signGoTxt)
         val goBackBtn = findViewById<Button>(R.id.goBackBtn)
         val usernameRegArea = findViewById<EditText>(R.id.usernameRegArea)
