@@ -18,7 +18,7 @@ class FourthActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.feed_recycler_view)
 
         btn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
 
