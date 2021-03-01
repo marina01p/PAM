@@ -3,6 +3,7 @@ package com.example.laboratory1.recycleView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -11,18 +12,21 @@ import com.example.laboratory1.R
 
 class RecycleAdapter(private var titles: List<String>,
                      private var details: List<String>,
-                     private var images: List<Int>) :
+                     private var images: List<Int>,
+                     private var time: List<String>):
+
         RecyclerView.Adapter<RecycleAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView) {
 
-        val itemTitle: TextView = itemView.findViewById(R.id.tv_title)
-        val itemDetails: TextView = itemView.findViewById(R.id.tv_description)
-        val itemPicture: ImageView = itemView.findViewById(R.id.iv_image)
+        val itemTitle: TextView = itemView.findViewById(R.id.thisTitle)
+        val itemDetails: TextView = itemView.findViewById(R.id.thisDescription)
+        val itemPicture: ImageView = itemView.findViewById(R.id.thisImage)
+        val itemTime: TextView = itemView.findViewById(R.id.postTime)
 
         init {
             itemView.setOnClickListener {
-                v: View -> Toast.makeText(itemView.context, "You clicked on item # ${position + 1}$", Toast.LENGTH_SHORT).show()
+                v: View -> Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -40,5 +44,6 @@ class RecycleAdapter(private var titles: List<String>,
         holder.itemTitle.text = titles[position]
         holder.itemDetails.text = details[position]
         holder.itemPicture.setImageResource(images[position])
+        holder.itemTime.text = time[position]
     }
 }

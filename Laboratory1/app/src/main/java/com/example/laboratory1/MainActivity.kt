@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
-
 class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
@@ -23,12 +22,11 @@ class MainActivity : AppCompatActivity() {
             if(usernameLogArea.text.trim().isNotEmpty() && passwordLogArea.text.trim().isNotEmpty()) {
                 val intent = Intent(this, ThirdActivity::class.java)
                 intent.putExtra("userNameLog", usernameLogArea.text.toString())
+                intent.putExtra("genderSpinner", "F")
                 startActivity(intent)
-//                Toast.makeText(this,"Input provided",Toast.LENGTH_LONG).show()
             } else {
                 Toast.makeText(this,"Input required",Toast.LENGTH_LONG).show()
             }
-
         }
 
         registerGoTxt.setOnClickListener {
