@@ -18,6 +18,7 @@ class ThirdActivity : AppCompatActivity() {
         val goToMainBtn = findViewById<Button>(R.id.goToMainBtn)
         val setAvatar = findViewById<ImageView>(R.id.setAvatar)
         val yourTxtArea = findViewById<EditText>(R.id.yourTxtArea)
+        val goToRandomBtn = findViewById<Button>(R.id.goToRandomBtn)
 
         val receivedLogName = intent.getStringExtra("userNameLog")
         val receivedRegName = intent.getStringExtra("userNameReg")
@@ -31,16 +32,17 @@ class ThirdActivity : AppCompatActivity() {
         val receivedGender = intent.getStringExtra("genderSpinner")
 
         if(receivedGender == "F") {
-            setAvatar.setImageResource(R.drawable.avatar_img)
+            setAvatar.setImageResource(R.drawable.avatar_female_img)
         } else if (receivedGender == "M") {
             setAvatar.setImageResource(R.drawable.avatar_male_img)
         }
+
 
         goToListBtn.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
             intent.putExtra("myName", userName.text.toString())
             intent.putExtra("myPost", yourTxtArea.text.toString())
-            intent.putExtra("myAvatar", setAvatar.tag as Int?)
+//            intent.putExtra("myAvatar", setAvatar.tag as Int)
             startActivity(intent)
         }
 
@@ -48,5 +50,13 @@ class ThirdActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        goToRandomBtn.setOnClickListener {
+            val intent = Intent(this, FourthActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 }

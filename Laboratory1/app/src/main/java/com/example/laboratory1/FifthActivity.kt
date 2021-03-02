@@ -49,23 +49,24 @@ class FifthActivity : AppCompatActivity() {
 
         val myName = intent.getStringExtra("myName")
         val myTxt = intent.getStringExtra("myPost")
+//        val myAvatar = intent.getIntExtra("myAvatar", 0)
 
         val date = getCurrentDateTime()
         val myTime = date.toString("HH:mm | dd/MM")
 
         if (myTxt != null && myName != null) {
-            addToList(myName, myTxt, R.mipmap.airplane_ic_launcher, myTime)
+            addToList(myName, myTxt, R.mipmap.female_avatar_round, myTime)
         }
 
-        addToList("Matthew", "To be, or not to be, that is the question.", R.mipmap.airplane_ic_launcher, "12:21 | 01/03")
-        addToList("Scarlet", "You only live once, but if you do it right, once is enough.", R.mipmap.airplane_ic_launcher, "14:14 | 25/02")
-        addToList("Jason", "I have not failed. I've just found 10,000 ways that won't work.", R.mipmap.airplane_ic_launcher, "15:01 | 21/02")
-        addToList("Eleanor", "If you tell the truth, you don't have to remember anything.", R.mipmap.airplane_ic_launcher, "14:32 | 15/02")
-        addToList("Frederick", "We accept the love we think we deserve.", R.mipmap.airplane_ic_launcher, "17:15 | 01/01")
+        addToList("Matthew", "To be, or not to be, that is the question.", R.mipmap.male_avatar_round, "12:21 | 01/03")
+        addToList("Scarlet", "You only live once, but if you do it right, once is enough.", R.mipmap.female_avatar_round, "14:14 | 25/02")
+        addToList("Jason", "I have not failed. I've just found 10,000 ways that won't work.", R.mipmap.male_avatar_round, "15:01 | 21/02")
+        addToList("Eleanor", "If you tell the truth, you don't have to remember anything.", R.mipmap.female_avatar_round, "14:32 | 15/02")
+        addToList("Frederick", "We accept the love we think we deserve.", R.mipmap.male_avatar_round, "17:15 | 05/01")
 
 
         for (i in 7..30) {
-            addToList("Cool name no. $i", "To lazy to write quote no. $i", R.mipmap.airplane_ic_launcher, myTime)
+            addToList("Cool name no. $i", "To lazy to write quote no. $i", R.mipmap.random_round, "11:10 | 01/01")
         }
     }
 }
