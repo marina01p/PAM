@@ -27,6 +27,7 @@ For this laboratory work I have 5 functional screens: registration and authentic
 
 ### Registration and Authentication
 Both activities are hardcoded, and I plan to work on their functionality of the next laboratory works.
+![alt text](https://github.com/marina01p/PAM/blob/lab2/Results/Android%20Auth%20and%20Registration.gif)
 
 ## Status
 This project is not finished.
