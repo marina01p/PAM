@@ -24,41 +24,53 @@
             android:layout_margin="10dp" />
 
         <LinearLayout
-            android:layout_width="268dp"
-            android:layout_height="104dp"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
             android:layout_alignTop="@id/thisImage"
             android:layout_alignBottom="@id/thisImage"
-            android:layout_marginBottom="-32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-74dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="-82dp"
             android:layout_toEndOf="@id/thisImage"
             android:layout_toRightOf="@id/thisImage"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/thisTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="321dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Title"
+                android:layout_marginTop="28dp"
+                android:text=""
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/thisDescription"
-                android:layout_width="247dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginLeft="10dp"
-                android:text="This is a description"
+                android:text=""
+                android:maxLength="90"
+                android:ellipsize="end"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/postTime"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="180dp" />
-
+                android:layout_marginLeft="130dp"
+                android:text=""
+                android:textSize="15sp" />
         </LinearLayout>
 
     </RelativeLayout>

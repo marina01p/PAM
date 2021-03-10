@@ -1,14 +1,17 @@
 package com.example.laboratory1
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.*
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
+
 class ThirdActivity : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
@@ -19,6 +22,25 @@ class ThirdActivity : AppCompatActivity() {
         val setAvatar = findViewById<ImageView>(R.id.setAvatar)
         val yourTxtArea = findViewById<EditText>(R.id.yourTxtArea)
         val goToRandomBtn = findViewById<Button>(R.id.goToRandomBtn)
+        val button = findViewById<Button>(R.id.button)
+
+//        yourTxtArea.addTextChangedListener(object: TextWatcher{
+//            override fun afterTextChanged(s: Editable?) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+//                val thisInput = yourTxtArea.text.toString().trim()
+//
+//                if (thisInput.isNotEmpty()) {
+//                goToListBtn.isEnabled
+//            }
+//        }})
+
 
         val receivedLogName = intent.getStringExtra("userNameLog")
         val receivedRegName = intent.getStringExtra("userNameReg")
@@ -37,7 +59,6 @@ class ThirdActivity : AppCompatActivity() {
             setAvatar.setImageResource(R.drawable.avatar_male_img)
         }
 
-
         goToListBtn.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
             intent.putExtra("myName", userName.text.toString())
@@ -51,11 +72,15 @@ class ThirdActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        button.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+        }
+
         goToRandomBtn.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
         }
-
 
 
     }
