@@ -19,13 +19,16 @@ class MainActivity : AppCompatActivity() {
         val passwordLogArea = findViewById<EditText>(R.id.passwordLogArea)
 
         navigateBtn.setOnClickListener {
-            if(usernameLogArea.text.trim().isNotEmpty() && passwordLogArea.text.trim().isNotEmpty()) {
+            if(usernameLogArea.text.trim().isNotEmpty()
+                && usernameLogArea.text.toString() == "Marina"
+                && passwordLogArea.text.trim().isNotEmpty()
+                && passwordLogArea.text.toString() == "123") {
                 val intent = Intent(this, ThirdActivity::class.java)
                 intent.putExtra("userNameLog", usernameLogArea.text.toString())
                 intent.putExtra("genderSpinner", "F")
                 startActivity(intent)
             } else {
-                Toast.makeText(this,"Input required",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Wrong input | Input required",Toast.LENGTH_LONG).show()
             }
         }
 
