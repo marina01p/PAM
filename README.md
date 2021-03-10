@@ -22,7 +22,11 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 6. Create your UI and layout to support portrait and landscape orientations and different screen sizes starting from phone with small screens (4 inch) to tablets with screen size 12 inch. Supporting of different screen sizes and orientation is mandatory.
 
 ## Implementation
-![alt text](https://github.com/marina01p/PAM/blob/lab2/Results/empty.png)
+The theme that I chose for this project is a mobile application where you can write down your thoughts and publish it. (like Twitter's main feature). 
+For this laboratory work I have 5 functional screens: registration and authentication, the main one, which represents My Account page, an activity which generates random quotes and the activity with the lists.
+
+### Registration and Authentication
+Both activities are hardcoded, and I plan to work on their functionality of the next laboratory works.
 
 ## Status
 This project is not finished.
