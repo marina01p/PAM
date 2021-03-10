@@ -25,9 +25,20 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 The theme that I chose for this project is a mobile application where you can write down your thoughts and publish it. (like Twitter's main feature). 
 For this laboratory work I have 5 functional screens: registration and authentication, the main one, which represents My Account page, an activity which generates random quotes and the activity with the lists.
 
-### Registration and Authentication
+### Registration, Authentication and My Account Page
 Both activities are hardcoded, and I plan to work on their functionality of the next laboratory works.
+![AuthRegVertical](https://github.com/marina01p/PAM/blob/lab2/Results/Android%20Auth%20and%20Registration.gif)
+![AuthRegHorizontal](https://github.com/marina01p/PAM/blob/lab2/Results/Android%20Registration%20and%20Authentication.gif)
+
+### Generate Random Quotes
+For this activity, I've implementet a simple random function and populated a MutableList with some quotes.
+![RandomVertical](https://github.com/marina01p/PAM/blob/lab2/Results/GenRandom1.gif)
+![RandomHorizontal](https://github.com/marina01p/PAM/blob/lab2/Results/GenRandom.gif)
+
+### Lists
+![ListsVertical](https://github.com/marina01p/PAM/blob/lab2/Results/Lists.gif)
+![ListsHorizontal](https://github.com/marina01p/PAM/blob/lab2/Results/lists1.gif)
 
 ## Status
-This project is not finished.
+This project is finished.
 
