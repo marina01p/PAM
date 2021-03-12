@@ -5,26 +5,25 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.laboratory1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        val registerGoTxt = findViewById<TextView>(R.id.registerGoTxt)
-        val navigateBtn = findViewById<Button>(R.id.navigateBtn)
-        val usernameLogArea = findViewById<EditText>(R.id.usernameLogArea)
-        val passwordLogArea = findViewById<EditText>(R.id.passwordLogArea)
-
-        navigateBtn.setOnClickListener {
-            if(usernameLogArea.text.trim().isNotEmpty()
-                && usernameLogArea.text.toString() == "Marina"
-                && passwordLogArea.text.trim().isNotEmpty()
-                && passwordLogArea.text.toString() == "123") {
+        binding.navigateBtn.setOnClickListener {
+            if(binding.usernameLogArea.text.trim().isNotEmpty()
+                && binding.usernameLogArea.text.toString() == "Marina"
+                && binding.passwordLogArea.text.trim().isNotEmpty()
+                && binding.passwordLogArea.text.toString() == "123") {
                 val intent = Intent(this, ThirdActivity::class.java)
-                intent.putExtra("userNameLog", usernameLogArea.text.toString())
+                intent.putExtra("userNameLog", binding.usernameLogArea.text.toString())
                 intent.putExtra("genderSpinner", "F")
                 startActivity(intent)
             } else {
@@ -32,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        registerGoTxt.setOnClickListener {
+        binding.registerGoTxt.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }

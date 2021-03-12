@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.laboratory1.R
+import com.example.laboratory1.databinding.ItemLayoutBinding
 
 class RecycleAdapter(private var titles: List<String>,
                      private var details: List<String>,
@@ -17,23 +18,21 @@ class RecycleAdapter(private var titles: List<String>,
 
         RecyclerView.Adapter<RecycleAdapter.ViewHolder>() {
 
+    private var _binding: ItemLayoutBinding? = null
+    private val binding get() = _binding!!
+
     inner class ViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView) {
-
-        val itemTitle: TextView = itemView.findViewById(R.id.thisTitle)
-        val itemDetails: TextView = itemView.findViewById(R.id.thisDescription)
-        val itemPicture: ImageView = itemView.findViewById(R.id.thisImage)
-        val itemTime: TextView = itemView.findViewById(R.id.postTime)
-
         init {
             itemView.setOnClickListener {
-                v: View -> Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
-        return ViewHolder(v)
+        _binding = ItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val view = binding.root
+        return ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
@@ -41,9 +40,9 @@ class RecycleAdapter(private var titles: List<String>,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemTitle.text = titles[position]
-        holder.itemDetails.text = details[position]
-        holder.itemPicture.setImageResource(images[position])
-        holder.itemTime.text = time[position]
+        binding.thisTitle.text = titles[position]
+        binding.thisDescription.text = details[position]
+        binding.thisImage.setImageResource(images[position])
+        binding.postTime.text = time[position]
     }
 }

@@ -1,12 +1,12 @@
 package com.example.laboratory1
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import com.example.laboratory1.databinding.ActivityFourthBinding
 
 class FourthActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityFourthBinding
 
     private val quoteList: MutableList<String> = mutableListOf("A day without sunshine is like, you know, night.\n― Steve Martin ―",
                                                                "That which does not kill us makes us stronger.\n― Friedrich Nietzsche ―",
@@ -25,14 +25,13 @@ class FourthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fourth)
+        binding = ActivityFourthBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        val genQuoteTextView= findViewById<TextView>(R.id.genQuoteTextView)
-        val genRandomBtn = findViewById<Button>(R.id.genRandomBtn)
-
-        genRandomBtn.setOnClickListener() {
+        binding.genRandomBtn.setOnClickListener() {
             val random = (0 until(quoteList.size)).random()
-            genQuoteTextView.text = quoteList[random]
+            binding.genQuoteTextView.text = quoteList[random]
         }
     }
 }

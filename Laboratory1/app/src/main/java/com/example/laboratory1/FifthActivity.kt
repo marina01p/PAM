@@ -4,12 +4,14 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.laboratory1.databinding.ActivityFifthBinding
 import com.example.laboratory1.recycleView.RecycleAdapter
 import java.text.SimpleDateFormat
 import java.util.*
 
 class FifthActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityFifthBinding
 
     private var titleList = mutableListOf<String>()
     private var descriptionList = mutableListOf<String>()
@@ -18,14 +20,14 @@ class FifthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fifth)
+        binding = ActivityFifthBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         postToList()
 
-        val recyclerView= findViewById<RecyclerView>(R.id.recyclerView)
-
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = RecycleAdapter(titleList, descriptionList, imagesList, timeList)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.adapter = RecycleAdapter(titleList, descriptionList, imagesList, timeList)
     }
 
     private fun addToList(title: String, description: String, image: Int, time: String) {
@@ -49,7 +51,6 @@ class FifthActivity : AppCompatActivity() {
 
         val myName = intent.getStringExtra("myName")
         val myTxt = intent.getStringExtra("myPost")
-//        val myAvatar = intent.getIntExtra("myAvatar", 0)
 
         val date = getCurrentDateTime()
         val myTime = date.toString("HH:mm | dd/MM")
@@ -63,7 +64,6 @@ class FifthActivity : AppCompatActivity() {
         addToList("Jason", "I have not failed. I've just found 10,000 ways that won't work.", R.mipmap.male_avatar_round, "15:01 | 21/02")
         addToList("Eleanor", "If you tell the truth, you don't have to remember anything.", R.mipmap.female_avatar_round, "14:32 | 15/02")
         addToList("Frederick", "We accept the love we think we deserve.", R.mipmap.male_avatar_round, "17:15 | 05/01")
-
 
         for (i in 7..30) {
             addToList("Cool name no. $i", "To lazy to write quote no. $i", R.mipmap.random_round, "11:10 | 01/01")
