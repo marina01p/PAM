@@ -1,4 +1,4 @@
-# Topic: *App basic setup*
+# Topic: *Basic layout and UI*
 ## Author: *Petici Marina*
 
 
@@ -9,29 +9,35 @@
 * [Status](#status)
 
 ## Introduction
-This is the laboratory work no. 1 for the Mobile Applications Programming course at the Technical University of Moldova.
+This is the laboratory work no. 2 for the Mobile Applications Programming course at the Technical University of Moldova.
    
 ## Tasks
 
-1. Init mobile application on selected platform
-2. Create at least 2 screens which transfer data from one screen to another
-3. Perform some data changes to data you received in screen No. 2 and pass it back to screen No. 1
-4. Add at least one active element on the screen, ex. button, text field and handle its action. Some not trivial action handling are welcome :)
-5. Change Icon of the app to custom one
+1. Pick a theme for your app. You will not be allowed to change theme after this lab.
+2. Implement design for at least 3 functional screens, this means to create such screen as main home screen, feed or another screen which relates to app business logic.
+3. Don't focus on sign in / sign up screen (there is no so much fun in creating that screens), but you are encouraged to add them too.
+4. At least 1 screen should present collection of data, in other words list of elements.
+List should contain at least 30 elements. For this lab you could hardcode data which you will use in order to populate list, or it could be a dummy data, but it should be human readable.
+5. Try to implement list with multiple columns at least 2, also you could try to implement list with multiple directions of scrolling, like list where elements could scroll vertical as usually, and row could scroll horizontally.
+6. Create your UI and layout to support portrait and landscape orientations and different screen sizes starting from phone with small screens (4 inch) to tablets with screen size 12 inch. Supporting of different screen sizes and orientation is mandatory.
 
 ## Implementation
+The theme that I chose for this project is a mobile application where you can write down your thoughts and publish it. (like Twitter's main feature). 
+For this laboratory work I have 5 functional screens: registration and authentication, the main one, which represents My Account page, an activity which generates random quotes and the activity with the lists.
 
-1. For this univrsity course I chose to work with Kotlin and Adroid Studio.
-2. After initializing a new project, I created a new activity (*SecondActivity.kt* along with *activity_second.xml*) and a spinner * button into the main screen, in order to pass data to the second one. The data was passed with the help of Intent, which provided runtime binding between the activities.
+### Registration, Authentication and My Account Page
+Both activities are hardcoded, and I plan to work on their functionality of the next laboratory works.
+![AuthRegVertical](https://github.com/marina01p/PAM/blob/lab2/Results/Android%20Auth%20and%20Registration.gif)
+![AuthRegHorizontal](https://github.com/marina01p/PAM/blob/lab2/Results/Android%20Registration%20and%20Authentication.gif)
 
-```
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("cityName", txtArea.text.toString());
-```
+### Generate Random Quotes
+For this activity, I've implementet a simple random function and populated a MutableList with some quotes.
+![RandomVertical](https://github.com/marina01p/PAM/blob/lab2/Results/GenRandom1.gif)
+![RandomHorizontal](https://github.com/marina01p/PAM/blob/lab2/Results/GenRandom.gif)
 
-3. The data from MainActivity.kt is transmitted into a text area created in the second activity, and the user is able to performe some changes to it and then pass it to the main screen, where it will be displayed.
-4. Lastly, I changed the icon of my app into a new customized one.
-
+### Lists
+![ListsVertical](https://github.com/marina01p/PAM/blob/lab2/Results/Lists.gif)
+![ListsHorizontal](https://github.com/marina01p/PAM/blob/lab2/Results/lists1.gif)
 
 ## Status
 This project is finished.
