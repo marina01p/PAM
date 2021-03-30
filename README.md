@@ -12,7 +12,8 @@
 This is the laboratory work no. 3 for the Mobile Applications Programming course at the Technical University of Moldova.
    
 ## Tasks
------------------------------------------------------------------Laboratory no. 2-----------------------------------------------------------------
+
+--------------------------------------------------------Laboratory no. 2--------------------------------------------------------
 
 1. Pick a theme for your app. You will not be allowed to change theme after this lab.
 2. Implement design for at least 3 functional screens, this means to create such screen as main home screen, feed or another screen which relates to app business logic.
@@ -22,7 +23,7 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 5. Try to implement list with multiple columns at least 2, also you could try to implement list with multiple directions of scrolling, like list where elements could scroll vertical as usually, and row could scroll horizontally.
 6. Create your UI and layout to support portrait and landscape orientations and different screen sizes starting from phone with small screens (4 inch) to tablets with screen size 12 inch. Supporting of different screen sizes and orientation is mandatory.
 
------------------------------------------------------------------Laboratory no. 3-----------------------------------------------------------------
+--------------------------------------------------------Laboratory no. 3--------------------------------------------------------
 
 1. Pick an API it could be public or private in case you have access to it. You could use your own API or TCP server (in case you a building chat). In case if you use Firebase or another serverless service, please add integration to Firebase but also implement connection to another API by performing standard HTTP requests.
 2. Implement at least 2 GET and 2 POST requests. At least 1 of your request should send data to API by request body in JSON format, but not by URL queries.
