@@ -57,5 +57,10 @@ class ThirdActivity : AppCompatActivity() {
             val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
         }
+
+        binding.goToContacts?.setOnClickListener {
+            val intent = Intent(this, SixthActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
