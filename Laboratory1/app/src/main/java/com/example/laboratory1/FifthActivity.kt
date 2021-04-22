@@ -33,7 +33,6 @@ class FifthActivity : AppCompatActivity() {
         binding.recyclerView.adapter = RecycleAdapter(titleList, descriptionList, imagesList, timeList)
 
         bottomNavigation = findViewById(R.id.bottom_navigation)
-
         bottomNavigation.selectedItemId = R.id.posts
         bottomNavigation.performClick()
 
@@ -55,8 +54,9 @@ class FifthActivity : AppCompatActivity() {
                     val intent = Intent(this, SixthActivity::class.java)
                     startActivity(intent)
                 }
-                R.id.exit -> {
-                    finishAffinity()
+                R.id.games -> {
+                    val intent = Intent(this, SecondActivity::class.java)
+                    startActivity(intent)
                 }
             }
             true

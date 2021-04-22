@@ -60,8 +60,9 @@ class FourthActivity : AppCompatActivity() {
                     val intent = Intent(this, SixthActivity::class.java)
                     startActivity(intent)
                 }
-                R.id.exit -> {
-                    finishAffinity()
+                R.id.games -> {
+                    val intent = Intent(this, SecondActivity::class.java)
+                    startActivity(intent)
                 }
             }
             true

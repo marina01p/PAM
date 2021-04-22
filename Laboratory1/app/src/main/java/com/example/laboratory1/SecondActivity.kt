@@ -1,43 +1,31 @@
 package com.example.laboratory1
 
-import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
-import android.content.SharedPreferences
-import android.os.Build
-import android.os.Bundle
-import android.widget.*
-import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.laboratory1.databinding.ActivityThirdBinding
+import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.Toast
+import com.example.laboratory1.databinding.ActivitySecondBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_second.*
+import java.util.*
+import kotlin.collections.ArrayList
 
+open class SecondActivity : AppCompatActivity() {
 
-class ThirdActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityThirdBinding
+    private lateinit var binding: ActivitySecondBinding
     lateinit var bottomNavigation : BottomNavigationView
 
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityThirdBinding.inflate(layoutInflater)
+        binding = ActivitySecondBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        binding.userName.text = "Marina"
-        binding.setAvatar.setImageResource(R.drawable.avatar_female_img)
-
-        binding.goToListBtn.setOnClickListener {
-            val intent = Intent(this, FifthActivity::class.java)
-            intent.putExtra("myName", binding.userName.text.toString())
-            intent.putExtra("myPost", binding.yourTxtArea.text.toString())
-            startActivity(intent)
-        }
-
         bottomNavigation = findViewById(R.id.bottom_navigation)
-        bottomNavigation.selectedItemId = R.id.my_profile
+
+        bottomNavigation.selectedItemId = R.id.games
         bottomNavigation.performClick()
 
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
@@ -65,5 +53,11 @@ class ThirdActivity : AppCompatActivity() {
             }
             true
         }
+
+        binding.startNewGameButton.setOnClickListener {
+            val intent = Intent(MainActivity@this, GameActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }

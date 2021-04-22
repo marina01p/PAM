@@ -23,8 +23,13 @@
         android:icon="@drawable/ic_user"/>
 
     <item
-        android:id="@+id/exit"
-        android:title="Exit"
-        android:icon="@drawable/ic_exit"/>
+        android:id="@+id/games"
+        android:title="Games"
+        android:icon="@drawable/ic_game"/>
+
+<!--    <item-->
+<!--        android:id="@+id/exit"-->
+<!--        android:title="Exit"-->
+<!--        android:icon="@drawable/ic_exit"/>-->
 
 </menu>

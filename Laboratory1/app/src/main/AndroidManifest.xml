@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.laboratory1">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/airplane_ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Laboratory1">
-        <activity android:name=".SixthActivity"></activity>
+        <activity android:name=".GameActivity"></activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".SixthActivity" />
         <activity
             android:name=".FourthActivity"
             android:parentActivityName=".ThirdActivity" />
