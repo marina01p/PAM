@@ -11,7 +11,7 @@
         android:id="@+id/player_one_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player 1 Points:"
+        android:text="Player 1 | Points:"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Player 2 Points:"
+        android:text="Player 2 | Points:"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player_one_score" />
@@ -179,7 +179,6 @@
         app:layout_constraintEnd_toEndOf="@+id/three"
         app:layout_constraintStart_toStartOf="@+id/one"
         app:layout_constraintTop_toBottomOf="@+id/two" />
-
 
     <Button
         android:id="@+id/start_new_game_button"
