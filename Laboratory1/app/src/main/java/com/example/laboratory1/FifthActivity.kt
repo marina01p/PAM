@@ -1,17 +1,20 @@
 package com.example.laboratory1
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.laboratory1.databinding.ActivityFifthBinding
 import com.example.laboratory1.recycleView.RecycleAdapter
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat
 import java.util.*
 
 class FifthActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFifthBinding
+    lateinit var bottomNavigation : BottomNavigationView
 
     private var titleList = mutableListOf<String>()
     private var descriptionList = mutableListOf<String>()
@@ -28,6 +31,36 @@ class FifthActivity : AppCompatActivity() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = RecycleAdapter(titleList, descriptionList, imagesList, timeList)
+
+        bottomNavigation = findViewById(R.id.bottom_navigation)
+
+        bottomNavigation.selectedItemId = R.id.posts
+        bottomNavigation.performClick()
+
+        bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.my_profile -> {
+                    val intent = Intent(this, ThirdActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.posts -> {
+                    val intent = Intent(this, FifthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.randomise -> {
+                    val intent = Intent(this, FourthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.users -> {
+                    val intent = Intent(this, SixthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.exit -> {
+                    finishAffinity()
+                }
+            }
+            true
+        }
     }
 
     private fun addToList(title: String, description: String, image: Int, time: String) {
@@ -68,5 +101,6 @@ class FifthActivity : AppCompatActivity() {
         for (i in 7..30) {
             addToList("Cool name no. $i", "To lazy to write quote no. $i", R.mipmap.random_round, "11:10 | 01/01")
         }
+
     }
 }

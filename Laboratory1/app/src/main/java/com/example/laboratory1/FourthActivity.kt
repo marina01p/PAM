@@ -1,12 +1,15 @@
 package com.example.laboratory1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.laboratory1.databinding.ActivityFourthBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class FourthActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFourthBinding
+    lateinit var bottomNavigation : BottomNavigationView
 
     private val quoteList: MutableList<String> = mutableListOf("A day without sunshine is like, you know, night.\n― Steve Martin ―",
                                                                "That which does not kill us makes us stronger.\n― Friedrich Nietzsche ―",
@@ -33,5 +36,37 @@ class FourthActivity : AppCompatActivity() {
             val random = (0 until(quoteList.size)).random()
             binding.genQuoteTextView.text = quoteList[random]
         }
+
+        bottomNavigation = findViewById(R.id.bottom_navigation)
+
+        bottomNavigation.selectedItemId = R.id.randomise
+        bottomNavigation.performClick()
+
+        bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.my_profile -> {
+                    val intent = Intent(this, ThirdActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.posts -> {
+                    val intent = Intent(this, FifthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.randomise -> {
+                    val intent = Intent(this, FourthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.users -> {
+                    val intent = Intent(this, SixthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.exit -> {
+                    finishAffinity()
+                }
+            }
+            true
+        }
     }
+
+
 }

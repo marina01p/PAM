@@ -1,5 +1,6 @@
 package com.example.laboratory1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,7 @@ import com.example.laboratory1.ui.base.ViewModelFactory
 import com.example.laboratory1.ui.main.adapter.MainAdapter
 import com.example.laboratory1.ui.main.viewmodel.MainViewModel
 import com.example.laboratory1.utils.Status
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_sixth.*
 import kotlinx.android.synthetic.main.item_layout_one.view.imageViewAvatar
 import kotlinx.android.synthetic.main.item_layout_one.view.textViewUserName
@@ -24,6 +26,7 @@ class SixthActivity : AppCompatActivity() {
 
     private lateinit var viewModel: MainViewModel
     private lateinit var adapter: MainAdapter
+    lateinit var bottomNavigation : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +34,36 @@ class SixthActivity : AppCompatActivity() {
         setupViewModel()
         setupUI()
         setupObservers()
+
+        bottomNavigation = findViewById(R.id.bottom_navigation)
+
+        bottomNavigation.selectedItemId = R.id.users
+        bottomNavigation.performClick()
+
+        bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.my_profile -> {
+                    val intent = Intent(this, ThirdActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.posts -> {
+                    val intent = Intent(this, FifthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.randomise -> {
+                    val intent = Intent(this, FourthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.users -> {
+                    val intent = Intent(this, SixthActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.exit -> {
+                    finishAffinity()
+                }
+            }
+            true
+        }
     }
 
     private fun setupViewModel() {
@@ -75,12 +108,18 @@ class SixthActivity : AppCompatActivity() {
         })
     }
 
+
+
     private fun retrieveList(users: List<User>) {
         adapter.apply {
             addUsers(users)
             notifyDataSetChanged()
         }
+
+
     }
+
+
 
 
 }

@@ -14,11 +14,9 @@
         <activity android:name=".SixthActivity"></activity>
         <activity
             android:name=".FourthActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ThirdActivity" />
         <activity android:name=".FifthActivity" />
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".ThirdActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ThirdActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
