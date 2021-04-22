@@ -6,7 +6,6 @@
         android:title="Posts"
         android:icon="@drawable/ic_dashboard"/>
 
-
     <item
         android:id="@+id/randomise"
         android:title="Random"
@@ -26,10 +25,5 @@
         android:id="@+id/games"
         android:title="Games"
         android:icon="@drawable/ic_game"/>
-
-<!--    <item-->
-<!--        android:id="@+id/exit"-->
-<!--        android:title="Exit"-->
-<!--        android:icon="@drawable/ic_exit"/>-->
 
 </menu>
