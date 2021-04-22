@@ -1,14 +1,9 @@
 package com.example.laboratory1
 
-import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
-import android.widget.*
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.laboratory1.databinding.ActivityThirdBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -25,8 +20,7 @@ class ThirdActivity : AppCompatActivity() {
         binding = ActivityThirdBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-        binding.userName.text = "Marina"
+        binding.userName.text = getString(R.string.home_user_name)
         binding.setAvatar.setImageResource(R.drawable.avatar_female_img)
 
         binding.goToListBtn.setOnClickListener {

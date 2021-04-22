@@ -37,7 +37,7 @@ tools:context=".SecondActivity">
         android:layout_marginTop="280dp"
         android:layout_marginEnd="57dp"
         android:layout_marginRight="57dp"
-        android:text="Tic Tac Toe"
+        android:text="@string/tic_tac_txt"
         android:textSize="36sp"
         android:gravity="center"
         android:textStyle="bold"
@@ -61,7 +61,7 @@ tools:context=".SecondActivity">
         android:layout_marginEnd="118dp"
         android:layout_marginRight="118dp"
         android:layout_marginBottom="35dp"
-        android:text="Start New Game"
+        android:text="@string/start_game_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,6 @@ tools:context=".SecondActivity">
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
-
 
 </RelativeLayout>
 

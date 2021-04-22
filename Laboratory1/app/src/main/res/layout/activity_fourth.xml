@@ -34,7 +34,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="67dp"
-        android:text="GENERATE"
+        android:text="@string/generate_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:text="Don't have enough inspiration? Generate a random quote!"
+        android:text="@string/generate_txt"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/genRandomBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,8 +76,5 @@
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
-
-
-
 
 </RelativeLayout>

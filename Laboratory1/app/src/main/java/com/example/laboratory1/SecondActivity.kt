@@ -49,7 +49,7 @@ open class SecondActivity : AppCompatActivity() {
         }
 
         binding.startNewGameButton.setOnClickListener {
-            val intent = Intent(MainActivity@this, GameActivity::class.java)
+            val intent = Intent(this, GameActivity::class.java)
             startActivity(intent)
         }
     }

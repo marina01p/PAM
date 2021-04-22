@@ -140,7 +140,7 @@ class GameActivity : AppCompatActivity() {
         }
 
         winningBoxes.forEach { box ->
-            box.background = ContextCompat.getDrawable(GameActivity@ this, background)
+            box.background = ContextCompat.getDrawable(this, background)
         }
     }
 }

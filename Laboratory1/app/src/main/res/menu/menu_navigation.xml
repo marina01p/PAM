@@ -3,27 +3,27 @@
 
     <item
         android:id="@+id/posts"
-        android:title="Posts"
+        android:title="@string/nav_menu_posts"
         android:icon="@drawable/ic_dashboard"/>
 
     <item
         android:id="@+id/randomise"
-        android:title="Random"
+        android:title="@string/nav_bar_randomise"
         android:icon="@drawable/ic_star"/>
 
     <item
         android:id="@+id/my_profile"
-        android:title="My Profile"
+        android:title="@string/nav_bar_my_profile"
         android:icon="@drawable/ic_home"/>
 
     <item
         android:id="@+id/users"
-        android:title="Users"
+        android:title="@string/nav_menu_users"
         android:icon="@drawable/ic_user"/>
 
     <item
         android:id="@+id/games"
-        android:title="Games"
+        android:title="@string/nav_menu_games"
         android:icon="@drawable/ic_game"/>
 
 </menu>

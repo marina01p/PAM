@@ -28,7 +28,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="51dp"
-        android:text="POST"
+        android:text="@string/post_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.891"
@@ -50,7 +50,6 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="159dp"
         android:layout_marginRight="159dp"
-        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -93,7 +92,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:ems="10"
-        android:hint="What are you thinking about?"
+        android:hint="@string/hint_txt_post"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +109,5 @@
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
-
-
 
 </RelativeLayout>
