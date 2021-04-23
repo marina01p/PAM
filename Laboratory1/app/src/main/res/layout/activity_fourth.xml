@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presenter.randomise.FourthActivity">
+    android:background="@color/pink_100"
+    tools:context=".presenter.FourthActivity">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="674dp"
-        app:srcCompat="@drawable/aaa" />
+        app:srcCompat="@drawable/background_01" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -43,8 +44,9 @@
 
     <TextView
         android:id="@+id/genQuoteTextView"
-        android:layout_width="389dp"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -52,14 +54,16 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="13dp"
         android:layout_marginLeft="13dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
+        android:layout_marginBottom="230dp"
+        android:foregroundGravity="center"
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="@string/generate_txt"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/genRandomBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

@@ -2,55 +2,27 @@
 
     <string name="app_name">My application</string>
 
-<!--    Menu Navigation-->
+    <!--    Menu Navigation-->
     <string name="nav_menu_posts">Posts</string>
     <string name="nav_bar_randomise">Random</string>
     <string name="nav_bar_my_profile">My Profile</string>
     <string name="nav_menu_users">Users</string>
     <string name="nav_menu_games">Games</string>
 
-<!--    Second Activity-->
+    <!--    Second Activity-->
     <string name="tic_tac_txt">Tic Tac Toe</string>
     <string name="start_game_btn">Start New Game</string>
 
-<!--    Third Activity-->
+    <!--    Third Activity-->
     <string name="hint_txt_post">What are you thinking about?</string>
     <string name="home_user_name">Marina</string>
     <string name="post_btn">POST</string>
 
-<!--    Fourth Activity-->
+    <!--    Fourth Activity-->
     <string name="generate_btn">GENERATE</string>
     <string name="generate_txt">Don\'t have enough inspiration? Generate a random quote!</string>
 
-    <string name="r_quote_01">A day without sunshine is like, you know, night.</string>
-    <string name="r_quote_02">That which does not kill us makes us stronger.</string>
-    <string name="r_quote_03">If you judge people, you have no time to love them.</string>
-    <string name="r_quote_04">We don\'t see things as they are, we see them as we are.</string>
-    <string name="r_quote_05">Sometimes the questions are complicated and the answers are simple.</string>
-    <string name="r_quote_06">You can never get a cup of tea large enough or a book long enough to suit me.</string>
-    <string name="r_quote_07">Some people never go crazy. What truly horrible lives they must lead.</string>
-    <string name="r_quote_08">Some infinities are bigger than other infinities.</string>
-    <string name="r_quote_09">Never tell the truth to people who are not worthy of it.</string>
-    <string name="r_quote_10">A day without laughter is a day wasted.</string>
-    <string name="r_quote_11">Happiness in intelligent people is the rarest thing I know.</string>
-    <string name="r_quote_12">I became insane, with long intervals of horrible sanity.</string>
-    <string name="r_quote_13">Never memorize something that you can look up.</string>
-
-    <string name="r_author_01">― Steve Martin ―</string>
-    <string name="r_author_02">― Friedrich Nietzsche ―</string>
-    <string name="r_author_03">― Mother Teresa ―</string>
-    <string name="r_author_04">― Anaïs Nin ―</string>
-    <string name="r_author_05">― Dr. Seuss ―</string>
-    <string name="r_author_06">― C.S. Lewis ―</string>
-    <string name="r_author_07">― Charles Bukowski ―</string>
-    <string name="r_author_08">― John Green ―</string>
-    <string name="r_author_09">― Mark Twain ―</string>
-    <string name="r_author_10">― Nicolas Chamfort ―</string>
-    <string name="r_author_11">― Ernest Hemingway ―</string>
-    <string name="r_author_12">― Edgar Allan Poe ―</string>
-    <string name="r_author_13">― Albert Einstein ―</string>
-
-<!--    Fifth Activity-->
+    <!--    Fifth Activity-->
     <string name="r_user_name">Cool name no. </string>
     <string name="r_user_name_01">Matthew</string>
     <string name="r_user_name_02">Scarlet</string>
@@ -71,5 +43,7 @@
     <string name="r_post_time_03">15:01 | 21/02</string>
     <string name="r_post_time_04">14:32 | 15/02</string>
     <string name="r_post_time_05">17:15 | 05/01</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

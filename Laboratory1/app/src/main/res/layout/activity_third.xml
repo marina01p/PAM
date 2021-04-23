@@ -10,12 +10,11 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        app:srcCompat="@drawable/dsdsad" />
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/profile_wallpaper" />
 
     <Button
         android:id="@+id/goToListBtn"
-        android:backgroundTint="@color/grey_700"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_navigation"
@@ -27,7 +26,8 @@
         android:layout_marginLeft="252dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="@color/grey_700"
         android:text="@string/post_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,18 +38,21 @@
 
     <TextView
         android:id="@+id/userName"
-        android:layout_width="94dp"
-        android:layout_height="31dp"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/setAvatar"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:gravity="center"
+        android:text="@string/home_user_name"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -59,7 +62,7 @@
 
     <ImageView
         android:id="@+id/setAvatar"
-        android:layout_width="189dp"
+        android:layout_width="202dp"
         android:layout_height="202dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -68,14 +71,15 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="110dp"
         android:layout_marginLeft="110dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="112dp"
         android:layout_marginRight="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/profile_picture" />
 
     <EditText
         android:id="@+id/yourTxtArea"
@@ -88,7 +92,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="51dp"
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:ems="10"

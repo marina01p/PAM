@@ -13,11 +13,11 @@
         android:theme="@style/Theme.Laboratory1">
         <activity android:name=".presenter.game.GameActivity"></activity>
         <activity android:name=".presenter.game.SecondActivity" />
-        <activity android:name=".presenter.users.SixthActivity" />
+        <activity android:name=".presenter.SixthActivity" />
         <activity
-            android:name=".presenter.randomise.FourthActivity"
+            android:name=".presenter.FourthActivity"
             android:parentActivityName=".presenter.ThirdActivity" />
-        <activity android:name=".presenter.posts.FifthActivity" />
+        <activity android:name=".presenter.FifthActivity" />
         <activity android:name=".presenter.ThirdActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

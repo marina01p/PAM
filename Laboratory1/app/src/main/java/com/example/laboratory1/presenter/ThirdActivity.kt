@@ -8,16 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.laboratory1.R
 import com.example.laboratory1.databinding.ActivityThirdBinding
 import com.example.laboratory1.presenter.game.SecondActivity
-import com.example.laboratory1.presenter.posts.FifthActivity
-import com.example.laboratory1.presenter.randomise.FourthActivity
-import com.example.laboratory1.presenter.users.SixthActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.laboratory1.utils.AppConstants.bottomNavigation
 
 
 class ThirdActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityThirdBinding
-    lateinit var bottomNavigation : BottomNavigationView
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +21,6 @@ class ThirdActivity : AppCompatActivity() {
         binding = ActivityThirdBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        binding.userName.text = getString(R.string.home_user_name)
-        binding.setAvatar.setImageResource(R.drawable.avatar_female_img)
 
         binding.goToListBtn.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
