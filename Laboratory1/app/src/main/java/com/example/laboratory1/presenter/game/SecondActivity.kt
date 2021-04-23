@@ -1,9 +1,14 @@
-package com.example.laboratory1
+package com.example.laboratory1.presenter.game
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.laboratory1.R
 import com.example.laboratory1.databinding.ActivitySecondBinding
+import com.example.laboratory1.presenter.randomise.FourthActivity
+import com.example.laboratory1.presenter.ThirdActivity
+import com.example.laboratory1.presenter.posts.FifthActivity
+import com.example.laboratory1.presenter.users.SixthActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 open class SecondActivity : AppCompatActivity() {

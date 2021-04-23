@@ -1,4 +1,4 @@
-package com.example.laboratory1
+package com.example.laboratory1.presenter.game
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import com.example.laboratory1.R
+import com.example.laboratory1.presenter.game.model.Position
+import com.example.laboratory1.utils.WinningLine
 
 class GameActivity : AppCompatActivity() {
 
@@ -132,10 +135,10 @@ class GameActivity : AppCompatActivity() {
             WinningLine.COLUMN_1 -> Pair(listOf(two, five, eight), R.drawable.vertical_line)
             WinningLine.COLUMN_2 -> Pair(listOf(three, six, nine), R.drawable.vertical_line)
             WinningLine.DIAGONAL_LEFT -> Pair(listOf(one, five, nine),
-                R.drawable.left_diagonal_line
+                    R.drawable.left_diagonal_line
             )
             WinningLine.DIAGONAL_RIGHT -> Pair(listOf(three, five, seven),
-                R.drawable.right_diagonal_line
+                    R.drawable.right_diagonal_line
             )
         }
 

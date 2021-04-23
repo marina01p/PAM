@@ -1,4 +1,4 @@
-package com.example.laboratory1.data.model
+package com.example.laboratory1.api.model
 
 data class User(
     val email: String,

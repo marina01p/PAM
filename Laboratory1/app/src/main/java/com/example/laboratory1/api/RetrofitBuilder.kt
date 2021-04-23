@@ -1,11 +1,10 @@
-package com.example.laboratory1.data.api
+package com.example.laboratory1.api
 
+import com.example.laboratory1.utils.AppConstants.BASE_URL
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
-
-    private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()

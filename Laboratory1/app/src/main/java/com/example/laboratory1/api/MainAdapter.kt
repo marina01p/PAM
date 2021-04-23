@@ -1,12 +1,11 @@
-package com.example.laboratory1.ui.main.adapter
+package com.example.laboratory1.api
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.laboratory1.R
-import com.example.laboratory1.data.model.User
+import com.example.laboratory1.api.model.User
 import kotlinx.android.synthetic.main.item_layout_one.view.*
 
 class MainAdapter(private val users: ArrayList<User>) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {

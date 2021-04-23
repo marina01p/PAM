@@ -1,11 +1,16 @@
-package com.example.laboratory1
+package com.example.laboratory1.presenter
 
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.laboratory1.R
 import com.example.laboratory1.databinding.ActivityThirdBinding
+import com.example.laboratory1.presenter.game.SecondActivity
+import com.example.laboratory1.presenter.posts.FifthActivity
+import com.example.laboratory1.presenter.randomise.FourthActivity
+import com.example.laboratory1.presenter.users.SixthActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -38,24 +43,19 @@ class ThirdActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.my_profile -> {
                     val intent = Intent(this, ThirdActivity::class.java)
-                    startActivity(intent)
-                }
+                    startActivity(intent) }
                 R.id.posts -> {
                     val intent = Intent(this, FifthActivity::class.java)
-                    startActivity(intent)
-                }
+                    startActivity(intent) }
                 R.id.randomise -> {
                     val intent = Intent(this, FourthActivity::class.java)
-                    startActivity(intent)
-                }
+                    startActivity(intent) }
                 R.id.users -> {
                     val intent = Intent(this, SixthActivity::class.java)
-                    startActivity(intent)
-                }
+                    startActivity(intent) }
                 R.id.games -> {
                     val intent = Intent(this, SecondActivity::class.java)
-                    startActivity(intent)
-                }
+                    startActivity(intent) }
             }
             true
         }

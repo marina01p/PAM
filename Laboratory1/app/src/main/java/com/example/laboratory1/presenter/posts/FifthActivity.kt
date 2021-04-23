@@ -1,11 +1,16 @@
-package com.example.laboratory1
+package com.example.laboratory1.presenter.posts
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.laboratory1.R
 import com.example.laboratory1.databinding.ActivityFifthBinding
+import com.example.laboratory1.presenter.randomise.FourthActivity
+import com.example.laboratory1.presenter.game.SecondActivity
+import com.example.laboratory1.presenter.ThirdActivity
+import com.example.laboratory1.presenter.users.SixthActivity
 import com.example.laboratory1.recycleView.RecycleAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat

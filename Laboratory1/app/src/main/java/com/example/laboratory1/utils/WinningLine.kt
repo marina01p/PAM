@@ -1,4 +1,4 @@
-package com.example.laboratory1
+package com.example.laboratory1.utils
 
 enum class WinningLine {
     ROW_0,

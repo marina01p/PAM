@@ -1,4 +1,7 @@
-package com.example.laboratory1
+package com.example.laboratory1.presenter.game
+
+import com.example.laboratory1.presenter.game.model.Position
+import com.example.laboratory1.utils.WinningLine
 
 class GameManager {
 
@@ -11,7 +14,7 @@ class GameManager {
             return if (currentPlayer == 1) "X" else "O"
         }
 
-    private var state = arrayOf( // 2D Array
+    private var state = arrayOf(
         intArrayOf(0, 0, 0),
         intArrayOf(0, 0, 0),
         intArrayOf(0, 0, 0)
