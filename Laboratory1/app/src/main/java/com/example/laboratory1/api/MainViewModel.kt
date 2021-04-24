@@ -1,9 +1,9 @@
-package com.example.laboratory1.api.view
+package com.example.laboratory1.api
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.example.laboratory1.api.MainRepository
-import com.example.laboratory1.api.status.Resource
+import com.example.laboratory1.api.Resource
 import kotlinx.coroutines.Dispatchers
 
 class MainViewModel(private val mainRepository: MainRepository) : ViewModel() {

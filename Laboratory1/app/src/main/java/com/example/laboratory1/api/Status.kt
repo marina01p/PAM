@@ -1,4 +1,4 @@
-package com.example.laboratory1.api.status
+package com.example.laboratory1.api
 
 enum class Status {
     SUCCESS,

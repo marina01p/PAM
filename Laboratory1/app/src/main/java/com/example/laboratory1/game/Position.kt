@@ -1,4 +1,4 @@
-package com.example.laboratory1.presenter.game.model
+package com.example.laboratory1.game
 
 data class Position(
         val row: Int,

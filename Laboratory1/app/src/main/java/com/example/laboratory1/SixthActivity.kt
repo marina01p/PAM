@@ -1,4 +1,4 @@
-package com.example.laboratory1.presenter
+package com.example.laboratory1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,15 +9,13 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.laboratory1.R
 import com.example.laboratory1.api.ApiHelper
 import com.example.laboratory1.api.RetrofitBuilder
-import com.example.laboratory1.api.model.User
+import com.example.laboratory1.api.User
 import com.example.laboratory1.api.ViewModelFactory
 import com.example.laboratory1.api.MainAdapter
-import com.example.laboratory1.api.view.MainViewModel
-import com.example.laboratory1.api.status.Status
-import com.example.laboratory1.presenter.game.SecondActivity
+import com.example.laboratory1.api.MainViewModel
+import com.example.laboratory1.api.Status
 import com.example.laboratory1.utils.AppConstants.adapter
 import com.example.laboratory1.utils.AppConstants.bottomNavigation
 import com.example.laboratory1.utils.AppConstants.viewModel

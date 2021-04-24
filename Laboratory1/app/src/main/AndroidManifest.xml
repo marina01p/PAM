@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/airplane_ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Laboratory1">
-        <activity android:name=".presenter.game.GameActivity"></activity>
-        <activity android:name=".presenter.game.SecondActivity" />
-        <activity android:name=".presenter.SixthActivity" />
+        <activity android:name="com.example.laboratory1.game.GameActivity"></activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".SixthActivity" />
         <activity
-            android:name=".presenter.FourthActivity"
-            android:parentActivityName=".presenter.ThirdActivity" />
-        <activity android:name=".presenter.FifthActivity" />
-        <activity android:name=".presenter.ThirdActivity">
+            android:name=".FourthActivity"
+            android:parentActivityName=".ThirdActivity" />
+        <activity android:name=".FifthActivity" />
+        <activity android:name=".ThirdActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

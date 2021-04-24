@@ -20,7 +20,7 @@ class RecycleAdapter(private var titles: List<String>,
     inner class ViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
-            Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
             }
         }
     }

@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.laboratory1.R
-import com.example.laboratory1.api.model.User
 import kotlinx.android.synthetic.main.item_layout_one.view.*
 
 class MainAdapter(private val users: ArrayList<User>) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {

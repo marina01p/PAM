@@ -1,7 +1,7 @@
 package com.example.laboratory1.utils
 
 import com.example.laboratory1.api.MainAdapter
-import com.example.laboratory1.api.view.MainViewModel
+import com.example.laboratory1.api.MainViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 object AppConstants {

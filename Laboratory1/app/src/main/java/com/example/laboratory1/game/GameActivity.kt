@@ -1,4 +1,4 @@
-package com.example.laboratory1.presenter.game
+package com.example.laboratory1.game
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.example.laboratory1.R
-import com.example.laboratory1.presenter.game.model.Position
 import com.example.laboratory1.utils.WinningLine
 
 class GameActivity : AppCompatActivity() {

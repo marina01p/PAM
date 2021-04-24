@@ -1,4 +1,4 @@
-package com.example.laboratory1.api.status
+package com.example.laboratory1.api
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {
