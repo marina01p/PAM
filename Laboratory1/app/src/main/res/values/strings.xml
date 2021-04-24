@@ -22,28 +22,4 @@
     <string name="generate_btn">GENERATE</string>
     <string name="generate_txt">Don\'t have enough inspiration? Generate a random quote!</string>
 
-    <!--    Fifth Activity-->
-    <string name="r_user_name">Cool name no. </string>
-    <string name="r_user_name_01">Matthew</string>
-    <string name="r_user_name_02">Scarlet</string>
-    <string name="r_user_name_03">Jason</string>
-    <string name="r_user_name_04">Eleanor</string>
-    <string name="r_user_name_05">Frederick</string>
-
-    <string name="r_user_quote">To lazy to write quote no. </string>
-    <string name="r_user_quote_01">To be, or not to be, that is the question.</string>
-    <string name="r_user_quote_02">You only live once, but if you do it right, once is enough.</string>
-    <string name="r_user_quote_03">I have not failed. I\'ve just found 10,000 ways that won\'t work.</string>
-    <string name="r_user_quote_04">If you tell the truth, you don\'t have to remember anything.</string>
-    <string name="r_user_quote_05">We accept the love we think we deserve.</string>
-
-    <string name="r_post_time">11:10 | 01/01</string>
-    <string name="r_post_time_01">12:21 | 01/03</string>
-    <string name="r_post_time_02">14:14 | 25/02</string>
-    <string name="r_post_time_03">15:01 | 21/02</string>
-    <string name="r_post_time_04">14:32 | 15/02</string>
-    <string name="r_post_time_05">17:15 | 05/01</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

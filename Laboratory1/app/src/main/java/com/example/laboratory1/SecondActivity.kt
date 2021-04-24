@@ -29,26 +29,16 @@ open class SecondActivity : AppCompatActivity() {
 
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.my_profile -> {
-                    val intent = Intent(this, ThirdActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.posts -> {
-                    val intent = Intent(this, FifthActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.randomise -> {
-                    val intent = Intent(this, FourthActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.users -> {
-                    val intent = Intent(this, SixthActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.games -> {
-                    val intent = Intent(this, SecondActivity::class.java)
-                    startActivity(intent)
-                }
+                R.id.my_profile -> { val intent = Intent(this, ThirdActivity::class.java)
+                    startActivity(intent) }
+                R.id.posts -> { val intent = Intent(this, FifthActivity::class.java)
+                    startActivity(intent) }
+                R.id.randomise -> { val intent = Intent(this, FourthActivity::class.java)
+                    startActivity(intent) }
+                R.id.users -> { val intent = Intent(this, SixthActivity::class.java)
+                    startActivity(intent) }
+                R.id.games -> { val intent = Intent(this, SecondActivity::class.java)
+                    startActivity(intent) }
             }
             true
         }

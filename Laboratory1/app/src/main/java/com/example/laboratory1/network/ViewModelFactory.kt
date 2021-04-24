@@ -1,7 +1,8 @@
-package com.example.laboratory1.api
+package com.example.laboratory1.network
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.laboratory1.network.api.ApiHelper
 
 @Suppress("UNCHECKED_CAST")
 class ViewModelFactory(private val apiHelper: ApiHelper) : ViewModelProvider.Factory {

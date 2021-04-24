@@ -7,17 +7,13 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.laboratory1.databinding.ItemLayoutBinding
 
-class RecycleAdapter(private var titles: List<String>,
-                     private var details: List<String>,
-                     private var images: List<Int>,
-                     private var time: List<String>):
-
+internal class RecycleAdapter(private var postsList: List<Posts>) :
         RecyclerView.Adapter<RecycleAdapter.ViewHolder>() {
 
     private var _binding: ItemLayoutBinding? = null
     private val binding get() = _binding!!
 
-    inner class ViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
                 Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
@@ -31,14 +27,16 @@ class RecycleAdapter(private var titles: List<String>,
         return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return titles.size
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val posts = postsList[position]
+
+        binding.thisTitle.text = posts.titles
+        binding.thisDescription.text = posts.details
+        binding.thisImage.setImageResource(posts.image!!)
+        binding.postTime.text = posts.time
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        binding.thisTitle.text = titles[position]
-        binding.thisDescription.text = details[position]
-        binding.thisImage.setImageResource(images[position])
-        binding.postTime.text = time[position]
+    override fun getItemCount(): Int {
+        return postsList.size
     }
 }
