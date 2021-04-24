@@ -7,7 +7,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.laboratory1.databinding.ActivityFifthBinding
 
-import com.example.laboratory1.recycleView.RecycleAdapter
+import com.example.laboratory1.posts.RecycleAdapter
 import com.example.laboratory1.utils.AppConstants.bottomNavigation
 import com.example.laboratory1.utils.AppFunctions.Companion.getCurrentDateTime
 import java.text.SimpleDateFormat

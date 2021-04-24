@@ -1,4 +1,4 @@
-package com.example.laboratory1.recycleView
+package com.example.laboratory1.posts
 
 import android.view.LayoutInflater
 import android.view.View
