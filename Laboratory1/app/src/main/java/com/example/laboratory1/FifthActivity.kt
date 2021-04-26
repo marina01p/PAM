@@ -33,35 +33,6 @@ class FifthActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = RecycleAdapter(titleList, descriptionList, imagesList, timeList)
 
-        bottomNavigation = findViewById(R.id.bottom_navigation)
-        bottomNavigation.selectedItemId = R.id.posts
-        bottomNavigation.performClick()
-
-        bottomNavigation.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.my_profile -> {
-                    val intent = Intent(this, ThirdActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.posts -> {
-                    val intent = Intent(this, FifthActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.randomise -> {
-                    val intent = Intent(this, FourthActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.users -> {
-                    val intent = Intent(this, SixthActivity::class.java)
-                    startActivity(intent)
-                }
-                R.id.games -> {
-                    val intent = Intent(this, SecondActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-            true
-        }
     }
 
     private fun addToList(title: String, description: String, image: Int, time: String) {
