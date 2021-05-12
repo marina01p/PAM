@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="190dp"
+    android:layout_height="440dp"
     android:layout_margin="4dp"
     android:clickable="true"
     android:focusable="true"
@@ -13,65 +13,69 @@
     <RelativeLayout
         android:id="@+id/thisWrapper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
-
-        <ImageView
-            android:id="@+id/thisImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_margin="10dp" />
+        android:layout_height="440dp">
 
         <LinearLayout
-            android:layout_width="353dp"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@id/thisImage"
-            android:layout_alignBottom="@id/thisImage"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="-74dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-22dp"
             android:layout_marginEnd="0dp"
             android:layout_marginRight="0dp"
-            android:layout_marginBottom="-82dp"
-            android:layout_toEndOf="@id/thisImage"
-            android:layout_toRightOf="@id/thisImage"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/thisTitle"
-                android:layout_width="321dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="28dp"
-                android:text=""
+                android:layout_marginTop="32dp"
                 android:textColor="@android:color/black"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/thisDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
                 android:layout_marginStart="10dp"
-                app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginLeft="10dp"
-                android:text=""
-                android:maxLength="90"
                 android:ellipsize="end"
+                android:maxLength="90"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:layout_constraintRight_toRightOf="parent" />
 
             <TextView
                 android:id="@+id/postTime"
-                android:layout_width="wrap_content"
+                android:layout_width="145dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
                 android:layout_marginLeft="130dp"
-                android:text=""
                 android:textSize="15sp" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/thisImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-79dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

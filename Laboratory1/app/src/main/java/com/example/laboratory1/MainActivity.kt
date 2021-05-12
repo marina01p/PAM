@@ -1,39 +1,41 @@
 package com.example.laboratory1
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
-import android.widget.*
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.laboratory1.databinding.ActivityMainBinding
+import com.example.laboratory1.navigation.DrawerCoordinator
+import com.example.laboratory1.navigation.Navigator
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
 
-    @SuppressLint("SetTextI18n")
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var drawerCoordinator: DrawerCoordinator
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
-        binding.navigateBtn.setOnClickListener {
-            if(binding.usernameLogArea.text.trim().isNotEmpty()
-                && binding.usernameLogArea.text.toString() == "Marina"
-                && binding.passwordLogArea.text.trim().isNotEmpty()
-                && binding.passwordLogArea.text.toString() == "123") {
-                val intent = Intent(this, ThirdActivity::class.java)
-                intent.putExtra("userNameLog", binding.usernameLogArea.text.toString())
-                intent.putExtra("genderSpinner", "F")
-                startActivity(intent)
-            } else {
-                Toast.makeText(this,"Wrong input | Input required",Toast.LENGTH_LONG).show()
-            }
-        }
+        initDrawer()
+    }
 
-        binding.registerGoTxt.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
-        }
+    private fun initDrawer() {
+        setSupportActionBar(binding.toolbar)
+
+        val toggle = ActionBarDrawerToggle(
+            this,
+            binding.drawerLayout,
+            binding.toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
+        )
+
+        drawerCoordinator = DrawerCoordinator(
+            binding.drawerLayout,
+            binding.navView,
+            toggle,
+            Navigator(this)
+        )
     }
 }

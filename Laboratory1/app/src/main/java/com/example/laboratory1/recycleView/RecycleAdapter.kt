@@ -3,12 +3,8 @@ package com.example.laboratory1.recycleView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.laboratory1.R
 import com.example.laboratory1.databinding.ItemLayoutBinding
 
 class RecycleAdapter(private var titles: List<String>,
@@ -24,7 +20,7 @@ class RecycleAdapter(private var titles: List<String>,
     inner class ViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
-            Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(itemView.context, "You clicked on item # ${position + 1}", Toast.LENGTH_SHORT).show()
             }
         }
     }
