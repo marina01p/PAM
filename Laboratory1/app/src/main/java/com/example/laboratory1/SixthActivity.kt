@@ -17,7 +17,6 @@ import com.example.laboratory1.network.MainAdapter
 import com.example.laboratory1.network.MainViewModel
 import com.example.laboratory1.network.apiUtils.Status
 import com.example.laboratory1.utils.AppConstants.adapter
-import com.example.laboratory1.utils.AppConstants.bottomNavigation
 import com.example.laboratory1.utils.AppConstants.viewModel
 import kotlinx.android.synthetic.main.activity_sixth.*
 
