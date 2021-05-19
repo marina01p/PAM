@@ -27,8 +27,6 @@ class FifthActivity : AppCompatActivity(), PostView {
         val view = binding.root
         setContentView(view)
 
-        postsPresenter = PostPresenter(this, PostModel())
-        postsPresenter.sendPosts()
     }
 
     override fun postsView(postsList: ArrayList<Posts>) {

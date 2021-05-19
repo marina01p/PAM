@@ -12,9 +12,6 @@ object AppConstants {
 
     internal lateinit var viewModel: MainViewModel
     internal lateinit var adapter: MainAdapter
-    internal lateinit var bottomNavigation : BottomNavigationView
-    internal lateinit var postsPresenter: PostPresenter
-    internal lateinit var recyclerAdapter: RecycleAdapter
 
     internal const val r_quote_01 = "A day without sunshine is like, you know, night.\n― Steve Martin ―"
     internal const val r_quote_02 = "That which does not kill us makes us stronger.\n― Friedrich Nietzsche ―"

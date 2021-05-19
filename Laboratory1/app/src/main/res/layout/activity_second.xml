@@ -54,33 +54,24 @@
         android:id="@+id/startNewGameButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="126dp"
         android:layout_marginLeft="126dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="562dp"
         android:layout_marginEnd="118dp"
         android:layout_marginRight="118dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="121dp"
         android:backgroundTint="@color/grey_700"
         android:text="@string/start_game_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:itemBackground="@color/blue_grey_700"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
-        app:menu="@menu/menu_navigation" />
 
 </RelativeLayout>
 
