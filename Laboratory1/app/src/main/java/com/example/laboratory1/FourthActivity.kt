@@ -1,10 +1,8 @@
 package com.example.laboratory1
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.laboratory1.databinding.ActivityFourthBinding
-import com.example.laboratory1.utils.AppConstants.bottomNavigation
 import com.example.laboratory1.utils.AppFunctions.Companion.getPosts
 
 class FourthActivity : AppCompatActivity() {

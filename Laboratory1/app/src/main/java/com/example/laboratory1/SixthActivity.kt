@@ -9,15 +9,14 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.laboratory1.api.ApiHelper
-import com.example.laboratory1.api.RetrofitBuilder
-import com.example.laboratory1.api.User
-import com.example.laboratory1.api.ViewModelFactory
-import com.example.laboratory1.api.MainAdapter
-import com.example.laboratory1.api.MainViewModel
-import com.example.laboratory1.api.Status
+import com.example.laboratory1.network.api.ApiHelper
+import com.example.laboratory1.network.api.RetrofitBuilder
+import com.example.laboratory1.network.model.User
+import com.example.laboratory1.network.ViewModelFactory
+import com.example.laboratory1.network.MainAdapter
+import com.example.laboratory1.network.MainViewModel
+import com.example.laboratory1.network.apiUtils.Status
 import com.example.laboratory1.utils.AppConstants.adapter
-import com.example.laboratory1.utils.AppConstants.bottomNavigation
 import com.example.laboratory1.utils.AppConstants.viewModel
 import kotlinx.android.synthetic.main.activity_sixth.*
 

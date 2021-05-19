@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.laboratory1.databinding.ActivityThirdBinding
-import com.example.laboratory1.utils.AppConstants.bottomNavigation
 
 
 class ThirdActivity : AppCompatActivity() {

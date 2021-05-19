@@ -1,4 +1,4 @@
-package com.example.laboratory1.api
+package com.example.laboratory1.network.api
 
 import com.example.laboratory1.utils.AppConstants.BASE_URL
 import retrofit2.Retrofit
