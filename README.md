@@ -13,6 +13,7 @@ This is the laboratory work no. 3 for the Mobile Applications Programming course
 ## Tasks
 
 --------------------------------------------------------Laboratory no. 2--------------------------------------------------------
+
 -------------------------------------------------------Basic layout and UI------------------------------------------------------
 
 1. Pick a theme for your app. You will not be allowed to change theme after this lab.
@@ -24,6 +25,7 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 6. Create your UI and layout to support portrait and landscape orientations and different screen sizes starting from phone with small screens (4 inch) to tablets with screen size 12 inch. Supporting of different screen sizes and orientation is mandatory.
 
 --------------------------------------------------------Laboratory no. 3--------------------------------------------------------
+
 ------------------------------------------------------Application API layer-----------------------------------------------------
 
 1. Pick an API it could be public or private in case you have access to it. You could use your own API or TCP server (in case you a building chat). In case if you use Firebase or another serverless service, please add integration to Firebase but also implement connection to another API by performing standard HTTP requests.
@@ -33,6 +35,7 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 5. Add basic navigation component for in app navigation drawer menu (swipeable menu from left to right), or tab bar navigation (bottom bar with tabs) .
 
 --------------------------------------------------------Laboratory no. 4--------------------------------------------------------
+
 --------------------------------------------------- Application Architecture ---------------------------------------------------
 
 1. Perform a research on several mobile app architectures, they are almost the same for both platforms. Most popular architecture are MVC, MVP, MVVM, RIBs https://github.com/uber/RIBs , VIPER mostly for iOS, Hexagonal architecture https://en.wikipedia.org/wiki/Hexagonal_architecture_(software) 
@@ -41,6 +44,7 @@ List should contain at least 30 elements. For this lab you could hardcode data w
 4. Ffollow principles of "Clean Architectures" https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html and "Clean code" https://www.investigatii.md/uploads/resurse/Clean_Code.pdf.
 
 --------------------------------------------------------Laboratory no. 5--------------------------------------------------------
+
 ----------------------------------------------- Mobile application Unit testing ------------------------------------------------
 
 Cover at least 3 Business Logic Modules with Unit Tests. Use only build in platform frameworks for tests. For Android it is JUnit.
