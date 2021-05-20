@@ -2,7 +2,7 @@ package com.example.laboratory1.testing
 
 import com.example.laboratory1.utils.AppConstants.loginEmail
 
-object RegistrationUtil {
+object LoginUtil {
 
     fun validateLoginInput(
         email: String,

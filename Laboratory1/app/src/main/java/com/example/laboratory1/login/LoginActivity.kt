@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity(), ILoginView {
 
 
     private lateinit var binding: ActivityLoginBinding
-    internal lateinit var loginPresenter: ILoginPresenter
+    private lateinit var loginPresenter: ILoginPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

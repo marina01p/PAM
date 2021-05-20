@@ -3,7 +3,7 @@ package com.example.laboratory1.login.presenter
 import com.example.laboratory1.login.model.LoginModel
 import com.example.laboratory1.login.view.ILoginView
 
-class LoginPresenter(internal var iLoginView: ILoginView): ILoginPresenter {
+class LoginPresenter(private var iLoginView: ILoginView): ILoginPresenter {
 
     override fun onLogin(email: String, password: String) {
         val user = LoginModel(email, password)
@@ -14,8 +14,6 @@ class LoginPresenter(internal var iLoginView: ILoginView): ILoginPresenter {
             iLoginView.onLoginFail("Password must be greater than 6")
         else
             iLoginView.onLoginSuccess("Login Success")
-
-
     }
 
 }
