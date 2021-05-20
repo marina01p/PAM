@@ -38,7 +38,5 @@ class FifthActivity : AppCompatActivity(), PostView {
         recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = recyclerAdapter
         recyclerView.adapter?.notifyDataSetChanged()
-
-
     }
 }
